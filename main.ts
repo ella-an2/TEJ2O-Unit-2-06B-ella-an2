@@ -11,9 +11,15 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function() {
     basic.showIcon(IconNames.Yes)
     pins.digitalWritePin(DigitalPin.P16, 1)
+    pause(1)
+    pins.digitalWritePin(DigitalPin.P12, 1)
 })
+
+
 
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.No)
     pins.digitalWritePin(DigitalPin.P16, 0)
+    pause(1)
+    pins.digitalWritePin(DigitalPin.P12, 0)
 })
