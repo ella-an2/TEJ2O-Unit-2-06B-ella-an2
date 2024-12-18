@@ -4,6 +4,8 @@
  * Created on: Sep 2024
  * This program lights up one LED
 */
+
+// setup
 basic.clearScreen()
 pins.digitalWritePin(DigitalPin.P16,0)
 basic.showIcon(IconNames.Happy)
